@@ -35,7 +35,7 @@ function updateStats() {
 }
 
 function handleKeyPress(event) {
-    const currentSpan = wordSpans[currentIndex];
+    const currentSpan = wordEl.children[currentIndex];
     if (event.key === currentWord[currentIndex]) {
         currentSpan.classList.remove('w');
         currentSpan.classList.add('c');
